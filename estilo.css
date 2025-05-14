@@ -129,4 +129,5 @@ footer {
 .livros .preco{
     font-weight: bold;
     text-decoration: underline;
+    color: black;
 }
