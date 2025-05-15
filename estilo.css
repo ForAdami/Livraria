@@ -217,11 +217,15 @@ header nav ul li {
 
 .rodape-conteudo {
     display: flex;
-    text-align: center;
-    height: 49px;
-    max-width: 1200px;   /* Limita o conteúdo para não ficar esticado demais */
-    margin: 0 auto;      /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* centraliza horizontalmente o conteúdo flex */
+    align-items: center;     /* centraliza verticalmente */
+    text-align: center;      /* centraliza o texto dentro dos elementos */
+    height: auto;            /* permite altura automática para quebrar linhas */
+    max-width: 1200px;       /* limita largura máxima */
+    margin: 0 auto;          /* centraliza o container na página */
     padding: 0 20px;
+    flex-wrap: wrap;         /* permite quebra de linha se for flex container */
+    gap: 10px;               /* espaço entre elementos se houver mais de um */
 }
 
 .rodape a {
