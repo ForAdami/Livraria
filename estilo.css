@@ -207,7 +207,7 @@ header nav ul li {
 
 /* Rodapé */
 .rodape {
-    background-color: #222;
+    background-color: #3f2525;
     color: #f0f0f0;
     padding: 20px 0;
     text-align: center;
@@ -221,9 +221,6 @@ header nav ul li {
 
 .rodape-conteudo {
     display: flex;
-    color: #3f2525; /* use 'color', não 'font-color' */
-    align-items: center;
-    justify-content: space-between;
     height: 49px;
     background-color: #c7baa8;
     max-width: 1200px;   /* Limita o conteúdo para não ficar esticado demais */
