@@ -207,14 +207,12 @@ header nav ul li {
 
 /* Rodapé */
 .rodape {
-    background-color: #3f2525;
+    background-color: #3f2525;  /* Fundo marrom escuro em todo o rodapé */
     color: #f0f0f0;
     padding: 20px 0;
     text-align: center;
     font-size: 14px;
-    /* margin-top: 40px; */
     border-top: 3px solid #636a70;
-
     width: 100%;         /* Ocupa toda a largura da tela */
     position: relative;  /* Garante que fique no fluxo normal da página */
 }
@@ -222,12 +220,11 @@ header nav ul li {
 .rodape-conteudo {
     display: flex;
     height: 49px;
-    background-color: #c7baa8;
     max-width: 1200px;   /* Limita o conteúdo para não ficar esticado demais */
     margin: 0 auto;      /* Centraliza o conteúdo horizontalmente */
     padding: 0 20px;
+    /* Removi o background-color para herdar a cor da .rodape */
 }
-
 
 .rodape a {
     color: #f0f0f0;
