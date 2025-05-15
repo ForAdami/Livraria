@@ -220,6 +220,12 @@ header nav ul li {
 }
 
 .rodape-conteudo {
+    display: flex;
+    color: #3f2525; /* use 'color', não 'font-color' */
+    align-items: center;
+    justify-content: space-between;
+    height: 49px;
+    background-color: #c7baa8;
     max-width: 1200px;   /* Limita o conteúdo para não ficar esticado demais */
     margin: 0 auto;      /* Centraliza o conteúdo horizontalmente */
     padding: 0 20px;
