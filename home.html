@@ -13,7 +13,7 @@
         <div class="search">
             <div class="search-top">
                 <div class="logo" class="left-nav">
-                    <!-- <img src="img/logo.png" alt="logo da nossa livraria"> -->
+                    <img src="img/logo.png" alt="logo da nossa livraria">
                     <h1><a href="index.html">Livraria Luz no Mundo</a></h1>
                 </div>
                 <form action="#">
@@ -32,7 +32,7 @@
                         </datalist>
                     </div>
                     <div class="search-img" class="mid-nav">
-                        <img src="img/lupa.png" alt="icone da caixa de pesquisa">
+                        <img src="img/lupa.png" alt="icone de lupa da caixa de pesquisa">
                     </div>
                 </form>
                 <div class="right-nav">
@@ -67,67 +67,6 @@
         font-weight: normal;
         font-style: normal;
     }
-        /* Cabeçalho fixo e horizontal */
-        .top-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 30px;
-            background: linear-gradient(to bottom, #4d3b0c, #c5a027); /* preto para dourado */
-            color: white;
-            width: 100%;
-            box-sizing: border-box;
-            border-radius: 10px; /* cantos arredondados */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
-        
-        /* Logo à esquerda */
-        .left img {
-            width: 150px;
-            height: auto;
-        }
-
-        /* Título centralizado */
-        .center {
-            flex: 1;
-            text-align: center;
-        }
-        
-        .center h1 {
-            margin: 0;
-            font-size: 1.8em;
-            color: #2B0B00;
-        }
-        
-        /* Menu à direita */
-        .right .menu-central {
-            display: flex;
-            align-self: flex-end;
-        }
-        
-        .menu-central .btn {
-            display: flex;
-            gap: 15px;
-            text-decoration: none;
-            color: white;
-            background-color: #271b06;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        
-        .menu-central .btn:hover {
-            background-color: #ffb81e;
-            color: #4b2d01;
-        }
-
-        .right .menu-central {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px; /* ou mais, conforme desejar */
-        }
-
         header{
             height: 129px;
             background-color: #2B0B00;
@@ -157,7 +96,7 @@
         }
         .logo h1{
             font-weight: bold;
-            font-size: 2.5em;
+            font-size: clamp(1em, 2em, 3em);
         }
         .logo a{
             color: white;
