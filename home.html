@@ -212,26 +212,31 @@
             width: 30%;
         }
 
-        .cart{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 55%;
-            height: 90%;
-            margin-right: 10px;
-            font-size: 1.5em;
-        }
-        .cart img{
-            width: 50%;
-            height: 80%;
-            padding: 10px;
-            border-radius: 10%;
-        }
-        .cart img:hover{
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.164);
-        }
+        .cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: auto; /* ajuste automático ao conteúdo */
+    height: auto;
+    margin-right: 10px;
+    font-size: 1.5em;
+    padding: 5px; /* espaço interno opcional */
+}
+
+.cart img {
+    width: 32px; /* tamanho fixo ideal para ícone */
+    height: 32px;
+    padding: 5px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cart img:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
 
         .account{
             display: flex;
