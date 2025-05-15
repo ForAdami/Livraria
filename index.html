@@ -7,24 +7,90 @@ Erik Rodrigues da Silva
 Dalila de Oliveira Adami
 Samuel Alves da Silva Neto
 Pedro Vinícius Lopes Barbosa">
-    <meta charset="UTF-8">
-    <title>Livraria Luz no Mundo</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" type="imagex/png" href="img/logo.png">
-</head>
-<body class="index-page">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livraria - Home</title>
+    <link rel="shortcut icon" type="imagex/png" href="img/logo.png" />
+    <style>
+        /* Centraliza todo o conteúdo da página */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
 
-    <!-- Linha 1: Logomarca e Nome da Livraria -->
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* vertical */
+            align-items: center;     /* horizontal */
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        header .logo-container img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        header .logo-container h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        main.hero p {
+            font-size: 1.2em;
+            max-width: 500px;
+            margin-bottom: 40px;
+            color: #444;
+        }
+
+        .btn-home {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #2B0B00;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .btn-home:hover {
+            background-color: #FF851E;
+            color: #2B0B00;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
     <header>
         <div class="logo-container">
-            <img src="img/logo.png" alt="Logomarca da Livraria">
+            <img src="img/logo.png" alt="Logomarca da Livraria" />
             <h1>Livraria Luz no Mundo</h1>
         </div>
     </header>
 
-        <!-- Botão para ir à página Home -->
-        <a href="home.html" class="btn-home">Biblioteca</a>
-    </section>
+    <main class="hero">
+        <p>
+            Explore nossa seleção de títulos cristãos e encontre inspiração para cada momento da sua vida.
+        </p>
+        <a href="home.html" class="btn-home">Comece a Explorar</a>
+    </main>
 
-</body class="index-page">
+    <footer>
+        &copy; Livraria Luz no Mundo - 2025
+    </footer>
+
+</body>
 </html>
