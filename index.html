@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta author="Edson Franklin Abreu
-Maria de Fátima da Silva de Sousa
-Erik Rodrigues da Silva
-Dalila de Oliveira Adami
-Samuel Alves da Silva Neto
-Pedro Vinícius Lopes Barbosa">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Livraria - Home</title>
-    <link rel="shortcut icon" type="imagex/png" href="img/logo.png" />
+    <meta name="author" content="Edson Franklin Abreu, Maria de Fátima da Silva de Sousa, Erik Rodrigues da Silva, Dalila de Oliveira Adami, Samuel Alves da Silva Neto, Pedro Vinícius Lopes Barbosa" />
+    <title>Livraria Luz no Mundo</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    
     <style>
-        /* Centraliza todo o conteúdo da página */
+        @font-face {
+        font-family: 'MinhaFonte';
+        src: url('font/LondiniaMedium.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         html, body {
             height: 100%;
-            margin: 0;
-        }
-
-        body {
+            font-family: 'MinhaFonte', sans-serif;
+            background: linear-gradient(to bottom, #2B0B00, #FF851E); /* wallpaper */
             display: flex;
             flex-direction: column;
-            justify-content: center; /* vertical */
-            align-items: center;     /* horizontal */
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #001f3f, #b3daff); /* azul-marinho → azul-bebê */
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 20px;
-            min-height: 100vh;
         }
 
-        header .logo-container img {
-            width: 120px;
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-container h1 {
+           font-family: 'MinhaFonte', sans-serif;
+        }
+
+        .logo-container img {
+            width: 320px;
             height: auto;
             margin-bottom: 10px;
         }
 
-        header .logo-container h1 {
+        .logo-container h1 {
             color: white;
-            margin-bottom: 30px;
+            font-size: 2em;
         }
 
-        main.hero p {
-            font-size: 1.2em;
-            max-width: 500px;
-            margin-bottom: 40px;
-            color: white;
+        .menu-central {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
         }
 
-        .btn-home {
-            display: inline-block;
+        .btn {
             padding: 12px 28px;
             background-color: #2B0B00;
             color: white;
@@ -60,37 +76,25 @@ Pedro Vinícius Lopes Barbosa">
             transition: background-color 0.3s;
         }
 
-        .btn-home:hover {
+        .btn:hover {
             background-color: #FF851E;
             color: #2B0B00;
-        }
-
-        footer {
-            margin-top: 60px;
-            font-size: 0.9em;
-            color: white;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
-            <img src="img/logo.png" alt="Logomarca da Livraria" />
-            <h1>Livraria Luz no Mundo</h1>
-        </div>
+    <!-- Cabeçalho com logo e nome da livraria -->
+    <header class="logo-container">
+        <img src="img/logo.png" alt="Logomarca da Livraria" />
+        <h1>Livraria Luz no Mundo</h1>
     </header>
 
-    <main class="hero">
-        <p>
-            Explore nossa seleção de títulos cristãos e encontre inspiração para cada momento da sua vida.
-        </p>
-        <a href="home.html" class="btn-home">Comece a Explorar</a>
+    <!-- Botões centralizados -->
+    <main class="menu-central">
+        <a href="home.html" class="btn">Biblioteca</a>
+    
     </main>
-
-    <footer>
-        &copy; Livraria Luz no Mundo - 2025
-    </footer>
 
 </body>
 </html>
