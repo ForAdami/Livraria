@@ -257,18 +257,67 @@
             color: rgb(224, 224, 224);
         }
 
-        .search-bottom{
-            display: flex;
-            font-color: #3f2525;
-            align-items: center;
-            justify-content: space-between;
-            height: 49px;
-            background-color: #c7baa8;
-        }
+        .search-bottom {
+    display: flex;
+    color: #3f2525; /* use 'color', não 'font-color' */
+    align-items: center;
+    justify-content: space-between;
+    height: 49px;
+    background-color: #c7baa8;
+    padding: 0 20px; /* um pouco de espaço interno */
+}
 
-        .search-bottom nav{
-            margin-left: 30px;
-        }
+.search-bottom nav {
+    margin-left: 30px;
+}
+
+.search-bottom nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.search-bottom nav ul li a {
+    text-decoration: none;
+    color: #3f2525;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+/* Efeito hover */
+.search-bottom nav ul li a:hover {
+    background-color: #2B0B00; /* marrom escuro */
+    color: #FFE6D1; /* bege claro */
+}
+
+/* Responsividade: stack na vertical em telas menores */
+@media (max-width: 600px) {
+    .search-bottom {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+    .search-bottom nav {
+        margin-left: 0;
+        width: 100%;
+    }
+    .search-bottom nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .search-bottom nav ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+}
+
 
         header nav ul {
             display: flex;
