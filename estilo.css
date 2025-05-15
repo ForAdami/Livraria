@@ -217,6 +217,7 @@ header nav ul li {
 
 .rodape-conteudo {
     display: flex;
+    font-color: white;
     justify-content: center; /* centraliza horizontalmente o conteúdo flex */
     align-items: center;     /* centraliza verticalmente */
     text-align: center;      /* centraliza o texto dentro dos elementos */
