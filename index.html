@@ -1,25 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Edson Franklin Abreu, Maria de Fátima da Silva de Sousa, Erik Rodrigues da Silva, Dalila de Oliveira Adami, Samuel Alves da Silva Neto, Pedro Vinícius Lopes Barbosa">
+    <meta charset="UTF-8" />
+    <meta name="author" content="Edson Franklin Abreu, Maria de Fátima da Silva de Sousa, Erik Rodrigues da Silva, Dalila de Oliveira Adami, Samuel Alves da Silva Neto, Pedro Vinícius Lopes Barbosa" />
     <title>Livraria Luz no Mundo</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    
+    <style>
+        @font-face {
+        font-family: 'MinhaFonte';
+        src: url('font/LondiniaMedium.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'MinhaFonte', sans-serif;
+            background: linear-gradient(to bottom, #2B0B00, #FF851E); /* wallpaper */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-container h1 {
+           font-family: 'MinhaFonte', sans-serif;
+        }
+
+        .logo-container img {
+            width: 320px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .logo-container h1 {
+            color: white;
+            font-size: 2em;
+        }
+
+        .menu-central {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 12px 28px;
+            background-color: #2B0B00;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #FF851E;
+            color: #2B0B00;
+        }
+    </style>
+
 </head>
 <body>
 
     <!-- Cabeçalho com logo e nome da livraria -->
     <header class="logo-container">
-        <img src="img/logo.png" alt="Logomarca da Livraria">
+        <img src="img/logo.png" alt="Logomarca da Livraria" />
+
         <h1>Livraria Luz no Mundo</h1>
     </header>
 
     <!-- Botões centralizados -->
     <main class="menu-central">
         <a href="home.html" class="btn">Biblioteca</a>
-        <!-- Você pode adicionar mais botões se quiser -->
-        <!-- <a href="contato.html" class="btn">Contato</a> -->
     </main>
 
 </body>

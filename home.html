@@ -9,15 +9,93 @@
 <body>
 
     <!-- Cabeçalho com logomarca e menu -->
-    <header class="logo-container">
-        <img src="img/logo.png" alt="Logomarca da Livraria">
-        <h1>Livraria Luz no Mundo</h1>
-        <nav class="menu-central">
-            <a href="home.html" class="btn">Biblioteca</a>
-            <a href="index.html" class="btn">Home</a>
-        </nav>
-    </header>
+    <header class="top-header">
+        <div class="left">
+            <img src="img/logo.png" alt="Logomarca da Livraria" />
+        </div>
+        <div class="center">
+            <h1>Livraria Luz no Mundo</h1>
+        </div>
+        <div class="right">
+            <nav class="menu-central">
+                <a href="home.html" class="btn">Biblioteca</a>
+                <a href="index.html" class="btn">Home</a>
+            </nav>
+        </div>
 
+    </header>
+    
+    
+    <style>
+        @font-face {
+        font-family: 'MinhaFonte';
+        src: url('font/LondiniaMedium.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+        /* Cabeçalho fixo e horizontal */
+        .top-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background: linear-gradient(to bottom, #4d3b0c, #c5a027); /* preto para dourado */
+            color: white;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 10px; /* cantos arredondados */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        /* Logo à esquerda */
+        .left img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Título centralizado */
+        .center {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .center h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #2B0B00;
+        }
+        
+        /* Menu à direita */
+        .right .menu-central {
+            display: flex;
+            align-self: flex-end;
+        }
+        
+        .menu-central .btn {
+            display: flex;
+            gap: 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #271b06;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .menu-central .btn:hover {
+            background-color: #ffb81e;
+            color: #4b2d01;
+        }
+
+        .right .menu-central {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px; /* ou mais, conforme desejar */
+    }
+
+        </style>
+        
     <!-- Seção dos livros -->
     <main>
         <section class="opcoes" id="opcoes">
@@ -102,7 +180,7 @@
 
     <!-- Rodapé -->
     <footer>
-        <p>Livraria - 2025</p>
+        <p>Livraria Luz no Mundo - 2025</p>
     </footer>
 
 </body>
