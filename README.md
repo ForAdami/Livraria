@@ -21,7 +21,7 @@ Criar uma interface funcional e amigável para uma livraria online, aplicando co
 - CSS3  
 
 ## 📂 Estrutura do Projeto
-
+```
 /LIVRARIA
 ├── font/
 │ └── LondiniaMedium.ttf # Fonte personalizada usada no site
@@ -40,3 +40,4 @@ Criar uma interface funcional e amigável para uma livraria online, aplicando co
 ├── estilo.css # Arquivo de estilos (CSS)
 ├── home.html # Página "Home" da livraria
 └── index.html # Página principal do site
+```
