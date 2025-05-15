@@ -14,6 +14,50 @@ body {
     margin: 0;
 }
 
+/* Só vale para a página index.html */
+body.index-page, body.index-page html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* centraliza horizontalmente */
+    align-items: center;      /* centraliza verticalmente */
+    flex-direction: column;   /* organiza em coluna */
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+body.index-page .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+body.index-page .logo-container img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+body.index-page .btn-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2B0B00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+body.index-page .btn-home:hover {
+    background-color: #FF851E;
+    color: #2B0B00;
+}
+
+
 /* Imagens gerais */
 img {
     width: 200px;
