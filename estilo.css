@@ -192,7 +192,7 @@ header nav ul li {
 
 /* Add ao Carrinho */
 .adicionar-no-carrinho {
-    background-color: #691a00;
+    background-color: #3f2525;
     color: white;
     font-size: 1.2em;
     border: none;
@@ -202,7 +202,7 @@ header nav ul li {
 }
 
 .adicionar-no-carrinho:hover {
-    background-color: #2B0B00;
+    background-color: #c7baa8;
 }
 
 /* Rodapé */
