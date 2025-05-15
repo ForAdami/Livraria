@@ -212,21 +212,18 @@ header nav ul li {
     text-align: center;
     font-size: 14px;
     width: 100%;         /* Ocupa toda a largura da tela */
-    position: relative;  /* Garante que fique no fluxo normal da página */
+    position: relative;
+    white-space: normal;
+    line-height: 1.5;
 }
 
 .rodape-conteudo {
-    display: flex;
-    font-color: white;
-    justify-content: center; /* centraliza horizontalmente o conteúdo flex */
-    align-items: center;     /* centraliza verticalmente */
-    text-align: center;      /* centraliza o texto dentro dos elementos */
-    height: auto;            /* permite altura automática para quebrar linhas */
-    max-width: 1200px;       /* limita largura máxima */
-    margin: 0 auto;          /* centraliza o container na página */
+    .rodape-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
-    flex-wrap: wrap;         /* permite quebra de linha se for flex container */
-    gap: 10px;               /* espaço entre elementos se houver mais de um */
+    text-align: center;
+    white-space: normal; /* permite quebra de linha */
 }
 
 .rodape a {
