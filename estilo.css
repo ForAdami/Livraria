@@ -41,6 +41,9 @@ footer {
 }
 
 .btn-home {
+    
+    position: relative;
+    left: 45%;;
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -67,6 +70,7 @@ footer {
 .opcoes h1 {
     font-size: 30px;
     margin-bottom: 40px;
+    color: goldenrod;
 }
 
 /* GRID */
@@ -80,6 +84,34 @@ footer {
 }
 
 /* ESTILO DE CADA LIVRO */
+
+
+
+#body1 {
+      margin: 0;
+      overflow: hidden;
+      height: 100vh;
+      background: linear-gradient(135deg, #000000, #482b0b, #b25217);
+    }
+
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      background-color: rgba(239, 178, 47, 0.335);
+      border-radius: 50%;
+      animation: rise 20s infinite ease-in;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-110vh) scale(1.2);
+        opacity: 0;
+      }
+    }
 .livros {
     background-color: #ffffff;
     border-radius: 16px;
