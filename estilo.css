@@ -59,7 +59,7 @@ footer {
 
 /* SEÇÃO OPÇÕES */
 .opcoes {
-    background: linear-gradient(to right, #FFE7C2, #BDACFF);
+    background: linear-gradient(to right, #000000f8, #7163d8dc);
     padding: 50px 20px;
     text-align: center;
 }
@@ -124,4 +124,92 @@ footer {
     color: #666666;
     line-height: 1.5;
     margin-bottom: 10px;
+}
+
+.card button {
+    width: 100px;
+    height: 50px;
+}
+
+.livro-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px;
+    background-color: #fff;
+}
+
+.livro-card img {
+    width: 100%;
+    height: auto;
+}
+
+.livro-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.livro-titulo {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.livro-descricao {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.livro-preco {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.adicionar-no-carrinho {
+    background-color: #6b747e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.adicionar-no-carrinho:hover {
+    background-color: #36628d;
+}
+
+.rodape {
+    background-color: #222;
+    color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 3px solid #636a70;
+
+    width: 100%;         /* Ocupa toda a largura da tela */
+    position: relative;  /* Garante que fique no fluxo normal da página */
+}
+
+.rodape-conteudo {
+    max-width: 1200px;   /* Limita o conteúdo para não ficar esticado demais */
+    margin: 0 auto;      /* Centraliza o conteúdo horizontalmente */
+    padding: 0 20px;
+}
+
+
+.rodape a {
+    color: #f0f0f0;
+    text-decoration: underline;
+}
+
+.rodape a:hover {
+    color: #007BFF;
 }
