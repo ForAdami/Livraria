@@ -60,7 +60,7 @@ footer {
 /* SEÇÃO OPÇÕES */
 .opcoes {
     background: linear-gradient(to right, #000000f8, #7163d8dc);
-    padding: 50px 20px;
+    padding: 50px 20px 90px 20px;
     text-align: center;
 }
 
@@ -191,7 +191,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     font-size: 14px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     border-top: 3px solid #636a70;
 
     width: 100%;         /* Ocupa toda a largura da tela */
